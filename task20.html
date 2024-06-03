@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1- Write a program that prints numbers from 1 to 10 using a for loop.
+
+      for (let i = 1; i < 10; i++) {
+        console.log(i);
+      }
+
+      // 2-Write a program that prints the even numbers from 1 to 10 using a for loop.
+
+      for (let i = 1; i < 10; i++) {
+        if (i % 2 == 0) {
+          console.log(i);
+        }
+      }
+
+      for (let i = 2; i < 10; i += 2) {
+        console.log(i);
+      }
+
+      // 3- Write a program that prints the odd numbers from 1 to 10 using a while loop.
+
+      var num = 1;
+      while (num < 10) {
+        if (num % 2 == 1) {
+          console.log(num);
+        }
+        num++;
+      }
+
+      var num = 1;
+      while (num < 10) {
+        console.log(num);
+        num += 2;
+      }
+
+      // 4- Write a program that prints the multiplication table of a number entered by the user using a for loop.
+
+      for (let i = 1; i <= 12; i++) {
+        for (let o = 1; o <= 12; o++) {
+          var m = o * i;
+          console.log(`${i} * ${o} = ${m}`);
+        }
+      }
+
+      // 5- Write a program that calculates the sum of numbers from 1 to 100 using a while loop.
+
+      var sum = 0;
+      let i = 0;
+      while (i < 100) {
+        sum += i;
+        i++;
+      }
+      console.log(sum);
+
+      // 6- Write a program that calculates the factorial of a number entered by the user using a for loop.
+
+      var num = prompt("pelase, enter the number to find its fatorial");
+      for (let i = num - 1; i > 0; i--) {
+        num = num * i;
+      }
+      console.log(num);
+
+      // 7- Write a program that prints the Fibonacci series up to a certain number entered by the user using a while loop.
+
+      var x = prompt(
+        "How many numbers whould you like the squence to consisit of?"
+      );
+      x = x -= 2;
+      var prePre = 0;
+      var pre = 1;
+      var current = 0;
+      console.log(prePre);
+      console.log(pre);
+      while (x > 0) {
+        current = pre + prePre;
+        console.log(current);
+        prePre = pre;
+        pre = current;
+        x--;
+      }
+
+      // 8- Write a program that prints the reverse of the following numbers:
+      //5 , 10 , 15 , 20
+      // using a while loop.
+
+      var x = 20;
+      while (x > 0) {
+        console.log(x);
+        x -= 5;
+      }
+    </script>
+  </body>
+</html>
